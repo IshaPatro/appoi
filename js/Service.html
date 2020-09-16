@@ -1,0 +1,856 @@
+<html>
+<head>
+  <title>Appointment Scheduler</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap-social.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Emblema+One&display=swap.css">
+  <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/Service.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!-- start header -->
+  <header>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                  <i class="fa fa-phone"></i><span> Phone</span>987-654-3210
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                  <p><i class="fa fa-envelope-o"></i><span> Email</span><a href="#">abc@appoi.com</a></p>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="social-icon">
+                    <span>Meet us on</span>
+                    <a href="http://google.com/+"><i class="fa fa-google-plus"></i></a><span></span>
+                    <a href="http://www.facebook.com/profile.html?id="><i class="fa fa-facebook"></i></a><span></span>
+                    <a href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a><span></span>
+                    <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a><span></span>
+                    <a href="http://instagram.com/"><i class="fa fa-instagram"></i></a><span></span>
+                </div>
+             </div>
+          </div>
+      </div>
+  </header>
+  <!-- end header -->
+
+<!-- start navigation -->
+<nav class="navbar navbar-light navbar-expand-md navbar-default" role="navigation" id="NavBar">
+  <div class="container">
+    <a class="navbar-brand" href="./index.html" id="navbar-brand"><img src="Images/logo.png" height="50" width="65" />APPOI</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar" ><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="Navbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="Home.html"> HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="About.html"> ABOUT</a></li>
+        <li class="nav-item active"><a class="nav-link" href="Service.html" style="color: #28a7e9;"> SERVICES</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contact.html"> CONTACT</a></li>
+        <a href="./Login.html" class="btn btn-default log-in" type="button" id="log">LOG-IN</a>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- end navigation -->
+
+<image src="Images/service.png" width="100%">
+<br><br><br><br><br><br><br>
+<style>
+.filterDiv{
+    display:block;
+}
+</style>
+
+<h2 class="heading">SELECT THE SERVICES BELOW</h2>
+
+<div class="row">
+  <div class="col">
+    <div class="services">
+      <button class="service-btn" style="background-image: url('Images/Services/doctor.png');"></button>
+      <p class="service-txt"> Doctor </p>
+    </div>
+  </div>
+  <div class="col">
+    <div class="services">
+      <button class="service-btn" style="background-image: url('Images/Services/plumber.png');"></button>
+      <p class="service-txt"> Plumber </p>
+    </div>
+  </div>
+  <div class="col">
+    <div class="services">
+      <button class="service-btn" style="background-image: url('Images/Services/policeman.png');"></button>
+      <p class="service-txt"> Policeman </p>
+    </div>
+  </div>
+  <div class="col">
+    <div class="services">
+      <button class="service-btn" style="background-image: url('Images/Services/teacher.png');"></button>
+      <p class="service-txt"> Teacher </p>
+    </div>
+  </div>
+  <div class="col">
+    <div class="services">
+      <button class="service-btn" style="background-image: url('Images/Services/lawyer.png');"></button>
+      <p class="service-txt"> Lawyer </p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="services">
+      <button class="service-btn" style="background-image: url('Images/Services/artist.png');"></button>
+      <p class="service-txt"> Artist </p>
+    </div>
+  </div>
+  <div class="col">
+    <div class="services">
+      <button class="service-btn" style="background-image: url('Images/Services/colleagues.png');"></button>
+      <p class="service-txt"> Colleagues </p>
+    </div>
+  </div>
+  <div class="col">
+    <div class="services">
+      <button class="service-btn" style="background-image: url('Images/Services/electrician.png');"></button>
+      <p class="service-txt"> Electrician </p>
+    </div>
+  </div>
+  <div class="col">
+    <div class="services">
+      <button class="service-btn" style="background-image: url('Images/Services/consultant.png');"></button>
+      <p class="service-txt"> Consultant </p>
+    </div>
+  </div>
+  <div class="col">
+    <div class="services">
+      <button class="service-btn" style="background-image: url('Images/Services/esthetician.png');"></button>
+      <p class="service-txt"> Esthetician </p>
+    </div>
+  </div>
+</div>
+
+<br><br><br><br>
+<h2 class="heading">SELECT THE SERVICE PROVIDER AND TIME SLOT WHICH SUITS YOU THE BEST</h2>
+<br><br>
+
+<style>
+.detailButton{
+  cursor:pointer;
+}
+</style>
+<!-- start doc cards -->
+<div class="doc-cards">
+    <div class="row">
+      <div class="filterDiv Dermatologist">
+              <!-- start Doctor -->
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="image-flip">
+                      <div class="mainflip">
+                          <div class="frontside">
+                              <div class="card">
+                                  <div class="card-body text-center">
+                                      <p><img class=" img-fluid" src="Images/Doctors/Dermatologist01.png" alt="card image"></p>
+                                      <h4 class="card-title">Dr Shruti Lakhnpal Tondon</h4>
+                                      <p class="card-text" style="font-size: 18px;">Dermatologist</p>
+                                      <p class="card-text" style="font-size: 15px;"> Senior Consultant, 18 years of experience , MBBS, MD</p>
+                                      <p class="card-text" style="font-size: 12px;"><i class="fa fa-map-marker"></i> SHALBY HOSPITAL, AHMEDABAD</p>
+                                      <span class="fa fa-star fa-2x checked"></span>
+                                      <span class="fa fa-star fa-2x checked"></span>
+                                      <span class="fa fa-star fa-2x checked"></span>
+                                      <span class="fa fa-star fa-2x"></span>
+                                      <span class="fa fa-star fa-2x"></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card">
+                                  <div class="card-body text-center mt-4">
+                                      <p class="card-text">
+                                        <ul>
+                                          <li class="description">Dr Tondon is a renowned dermatologist in India.</li>
+                                          <li class="description">With a thriving practise of over 18 years, she is an expert in cosmetic surgery.</li>
+                                          <li class="description">She is a specialist in laser and radio frequency procedures for skin tags (cosmetic surgery), electrocautery and biopsies, chemical peels.</li>
+                                        </ul>
+                                      </p>
+                                      <button> Book an Appointment </button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- end Doctor -->
+      </div>
+      <div class="filterDiv Gynecologists Obstetrician">
+        <!-- start Doctor -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="Images/Doctors/Gynecologist02.png" alt="card image"></p>
+                                <h4 class="card-title">Dr. Sumana Manohar</h4>
+                                <p class="card-text" style="font-size: 18px;">Gynaecologist and Obstetrician</p>
+                                <p class="card-text" style="font-size: 15px;">Senior Consultant, 23 years of experience , MBBS, FRCOG, MRCOG</p>
+                                <p class="card-text" style="font-size: 12px;"><i class="fa fa-map-marker"></i>APOLLO HOSPITALS, GREAMS ROAD, CHENNAI</p>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x "></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <p class="card-text">
+                                  <ul>
+                                    <li class="description">Currently associated as gynecologist at Apollo Greams Road Hospitals, Chennai</li>
+                                    <li class="description">Expertise in Obstetrics and Gynaecology, Obstetrics and Gynaecology - Laparoscopic & Hyster, Obstetrics and Gynaecology - Robotic Surgeon</li>
+                                    <li class="description">Interests are Obstetrics and Gynaecology, Laparoscopic & Hyster, Robotic Surgeries, Rapid Access and Colposcopy and Antenatal Services and Ambulatory Obstetrics</li>
+                                  </ul>
+                                </p>
+                                <button> Book an Appointment </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Doctor -->
+      </div>
+      <div class="filterDiv Cardiologist">
+        <!-- start Doctor -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="Images/Doctors/Cardiologist01.png" alt="card image"></p>
+                                <h4 class="card-title">Dr Devi Prasad Shetty</h4>
+                                <p class="card-text" style="font-size: 18px;">Cardio-Thoracic Surgeon</p>
+                                <p class="card-text" style="font-size: 15px;">Chairman, 34 years of experience , MBBS, MS, FRCS</p>
+                                <p class="card-text" style="font-size: 12px;"><i class="fa fa-map-marker"></i>NARAYANA MULTISPECIALITY HOSPITAL, BANGALORE</p>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <p class="card-text">
+                                  <ul>
+                                    <li class="description">Dr. Devi Prasad Shetty is one of the most renowned Cardiothoracic Surgeon in Bangalore.</li>
+                                    <li class="description">Dr. Shetty has been awarded 'Padma Shri', the fourth highest civilian award in India and 'Padma Bhushan', the third-highest civilian award by the Government of India for his contribution to healthcare.</li>
+                                    <li class="description">With an experience of over 34+ years, he has performed over 15,000 heart operations among which 5000 were performed on kids.</li>
+                                  </ul>
+                                </p>
+                                <button> Book an Appointment </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Doctor -->
+      </div>
+      <div class="filterDiv Dermatologist">
+        <!-- start Doctor -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="Images/Doctors/Dermatologist02.png" alt="card image"></p>
+                                <h4 class="card-title">Dr. Gopi Krishna Maddali</h4>
+                                <p class="card-text" style="font-size: 18px;">Dermatologist</p>
+                                <p class="card-text" style="font-size: 15px;"> 30 years of experience , MBBS, MD</p>
+                                <p class="card-text" style="font-size: 12px;"><i class="fa fa-map-marker"></i> SHARDA HOSPITAL, GREATER NOIDA</p>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x"></span>
+                                <span class="fa fa-star fa-2x"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <p class="card-text">
+                                  <ul>
+                                    <li class="description">Dr. Gopi Krishna Maddali is a well-known Dermatologist with experience of over 30 years.</li>
+                                    <li class="description">He offers treatment for all Dermatological problems, Venerology, and leprosy.</li>
+                                    <li class="description">Being the core counselor of APSACS (NACO) he has conducted training programs on HIV/AIDS-related topics for other medical officers.</li>
+                                  </ul>
+                                </p>
+                                <button> Book an Appointment </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Doctor -->
+      </div>
+      <div class="filterDiv Cardiologists">
+        <!-- start Doctor -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="Images/Doctors/Cardiologist02.png" alt="card image"></p>
+                                <h4 class="card-title">Dr. Naresh Trehan</h4>
+                                <p class="card-text" style="font-size: 18px;">Cardiac Surgeon</p>
+                                <p class="card-text" style="font-size: 15px;">Chairman, 40 years of experience , MBBS</p>
+                                <p class="card-text" style="font-size: 12px;"><i class="fa fa-map-marker"></i>MEDANTA - THE MEDICITY, GURGAON</p>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <p class="card-text">
+                                  <ul>
+                                    <li class="description">Currently associated as the chairman and managing director and is the chief cardiac surgeon at Medanta hospital, Gurgaon.</li>
+                                    <li class="description">Considered India's most successful cardiac surgeon with experience of over 40 years</li>
+                                    <li class="description">Former president of International Society for Minimally Invasive Cardiac Surgery (ISMICS), USA, and member of prestigious orgainsations like Society of Thoracic Surgeons of USA and The European Association for Cardio-thoracic Surgery, to name a few.</li>
+                                  </ul>
+                                </p>
+                                <button> Book an Appointment </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Doctor -->
+      </div>
+      <div class="filterDiv Gynecologists">
+        <!-- start Doctor -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="Images/Doctors/Gynecologist01.jpg" alt="card image"></p>
+                                <h4 class="card-title">Dr. Manish Banker </h4>
+                                <p class="card-text" style="font-size: 18px;">Infertility Specialist</p>
+                                <p class="card-text" style="font-size: 15px;"> Director, 22 years of experience , MBBS, MD, Diploma</p>
+                                <p class="card-text" style="font-size: 12px;"><i class="fa fa-map-marker"></i>NOVA IVI FERTILITY, AHMEDABAD</p>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <p class="card-text">
+                                  <ul>
+                                    <li class="description">Dr. Manish Banker is a renowned infertility specialist in India.</li>
+                                    <li class="description">With a thriving experience of 22+ years, he has successfully treated over 15,000 cases of infertility across the country.</li>
+                                    <li class="description">He has completed his MBBS & MD (Gold Medalist while pursuing MD) from the Gujrat University. Following which he did a diploma in IVF from University of Giel, Germany.</li>
+                                  </ul>
+                                </p>
+                                <button> Book an Appointment </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Doctor -->
+      </div>
+      <div class="filterDiv Dermatologist">
+        <!-- start Doctor -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="Images/Doctors/Dermatologist03.jpg" alt="card image"></p>
+                                <h4 class="card-title">	Dr Ramji Gupta</h4>
+                                <p class="card-text" style="font-size: 18px;">Dermatologist</p>
+                                <p class="card-text" style="font-size: 15px;"> Senior Consultant, 42 years of experience , MBBS, MD, DVD</p>
+                                <p class="card-text" style="font-size: 12px;"><i class="fa fa-map-marker"></i> BLK SUPER SPECIALITY HOSPITAL, NEW DELHI</p>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <p class="card-text">
+                                  <ul>
+                                    <li class="description">Dr Gupta with an experience of over 42 years, is counted amongst one of the most experienced & favoured dermatologist in India.</li>
+                                    <li class="description">Completing his MD (dermatology) & MBBS, he did his super specialization in pulse therapy.</li>
+                                    <li class="description">He is well-known for his research work on various skin diseases, specially treatment of pemphigus.</li>
+                                  </ul>
+                                </p>
+                                <button> Book an Appointment </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Doctor -->
+      </div>
+      <div class="filterDiv Obstetrician">
+        <!-- start Doctor -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="Images/Doctors/Obstetrician01.png" alt="card image"></p>
+                                <h4 class="card-title">Dr. Geeta Komar</h4>
+                                <p class="card-text" style="font-size: 18px;">Obstetrician</p>
+                                <p class="card-text" style="font-size: 15px;">Consultant,10 years of experience,MBBS, MD</p>
+                                <p class="card-text" style="font-size: 12px;"><i class="fa fa-map-marker"></i>FARIDABAD, INDIA</p>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x "></span>
+                                <span class="fa fa-star fa-2x "></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <p class="card-text">
+                                  <ul>
+                                    <li class="description">Dr. Shikha Parashar Sharma is a well known Obstetrician and Gynaecologist with experience of more than 10 years.</li>
+                                    <li class="description">She is skilled in offering treatments for Obstetrics problems.</li>
+                                    <li class="description">After graduating with MBBS from Rajiv Gandhi Institute of Medical Science in 2009, she pursued MD in Obstetrics and Gynaecology from Tata Main Hospital Jamshedpur in 2014.</li>
+                                  </ul>
+                                </p>
+                                <button> Book an Appointment </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Doctor -->
+      </div>
+      <div class="filterDiv Dermatologist">
+        <!-- start Doctor -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="Images/Doctors/Dermatologist04.jpg" alt="card image"></p>
+                                <h4 class="card-title">Dr. Ravichandran G</h4>
+                                <p class="card-text" style="font-size: 18px;">Dermatologist</p>
+                                <p class="card-text" style="font-size: 15px;">Consultant, 32 years of experience , MBBS, MD, Diploma</p>
+                                <p class="card-text" style="font-size: 12px;"><i class="fa fa-map-marker"></i> APOLLO HOSPITALS, GREAMS ROAD, CHENNAI</p>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <p class="card-text">
+                                  <ul>
+                                    <li class="description">He specializes in treating Vitiligo and has conducted more than 2000 operations. </li>
+                                    <li class="description">Completing his MD (dermatology) & MBBS, he did his super specialization in pulse therapy.</li>
+                                    <li class="description">He has many presentations and publications to his credit at the National and International levels. </li>
+                                  </ul>
+                                </p>
+                                <button> Book an Appointment </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Doctor -->
+      </div>
+      <div class="filterDiv Cardiologists">
+        <!-- start Doctor -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="Images/Doctors/Cardiologist03.jpg" alt="card image"></p>
+                                <h4 class="card-title">Dr. Naresh Trehan</h4>
+                                <p class="card-text" style="font-size: 18px;">Interventional Cardiologist</p>
+                                <p class="card-text" style="font-size: 15px;">Consultant, 38 years of experience , MBBS, MD, FRCP, MRCP, Fellowship</p>
+                                <p class="card-text" style="font-size: 12px;"><i class="fa fa-map-marker"></i>FORTIS ESCORTS HEART INSTITUTE, NEW DELHI</p>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <p class="card-text">
+                                  <ul>
+                                    <li class="description">Dr Ashok Seth is one of the most respected & coveted an interventional cardiologist in India.</li>
+                                    <li class="description">With a thriving experience of over 32 years, he is renowned for performing over 50,000 angiograms and 20,000 angioplasties.</li>
+                                    <li class="description">He has been featured in the “LIMCA” Book of records for performing one of the highest numbers of angiographies and angioplasties in the world.</li>
+                                  </ul>
+                                </p>
+                                <button> Book an Appointment </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Doctor -->
+      </div>
+      <div class="filterDiv Gynecologists">
+        <!-- start Doctor -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="Images/Doctors/Gynecologist04.jpg" alt="card image"></p>
+                                <h4 class="card-title">Dr. Sandeep Shah</h4>
+                                <p class="card-text" style="font-size: 18px;">Infertility Specialist</p>
+                                <p class="card-text" style="font-size: 15px;">Consultant, 20 years of experience , MBBS, MS, Fellowship</p>
+                                <p class="card-text" style="font-size: 12px;"><i class="fa fa-map-marker"></i>NOVA IVI FERTILITY, AHMEDABAD</p>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x "></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <p class="card-text">
+                                  <ul>
+                                    <li class="description">Dr. Sandeep Shah is an infertility specialist and Reproductive Medicine expert with 20+ years of experience.</li>
+                                    <li class="description">After MBBS and MS, he completed his training in Reproductive Medicine at Tuft University, Boston, USA in 1994.</li>
+                                    <li class="description">He has been key figure in establishing IVF and infertility centers at various places in India, Ghana, Kenya and Bangladesh.</li>
+                                  </ul>
+                                </p>
+                                <button> Book an Appointment </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Doctor -->
+      </div>
+      <div class="filterDiv Gynecologists Obstetrician">
+        <!-- start Doctor -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="Images/Doctors/Gynecologist03.png" alt="card image"></p>
+                                <h4 class="card-title">Dr. Alka Kriplani</h4>
+                                <p class="card-text" style="font-size: 18px;">Gynaecologist and Obstetrician</p>
+                                <p class="card-text" style="font-size: 15px;">Head of Department, 40 years of experience , MBBS, MD, FRCOG, Fellowship, FICMCH, FIMSA</p>
+                                <p class="card-text" style="font-size: 12px;"><i class="fa fa-map-marker"></i>PARAS HOSPITALS, GURGAON</p>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x "></span>
+                                <span class="fa fa-star fa-2x "></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <p class="card-text">
+                                  <ul>
+                                    <li class="description">Dr. Alka Kriplani is a gynecologist, gyne-lap surgeon and fertility expert with 40+ years of experience.</li>
+                                    <li class="description">She was honored with Padma Shri, the fourth highest Indian civilian award, by the Government of India in 2015 and Dr. B. C. Roy Award in 2007.</li>
+                                    <li class="description">Apart from this, she has won the Rashtriya Gaurav Award (2007), Dr. Nimish Shelat Research Prize in Reproductive Endocrinology (2010) and DGF Women of the Year Award.</li>
+                                  </ul>
+                                </p>
+                                <button> Book an Appointment </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Doctor -->
+      </div>
+    </div>
+  </div> -->
+<!-- end doc cards -->
+
+        <!-- start Doctor -->
+        <div class="col-xs-12 col-sm-6 col-md-4" style="float:left;">
+            <div class="image-flip">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                              <?php
+                                $name1=substr($row['Name'],3);
+                                $image='Images/Services/'.strtolower($row['Service']).'.png';
+
+                                if(!file_exists($image)){
+                                  $image='Images/customer-default.jpg';
+                                }
+
+                              ?>
+                                <p><img class=" img-fluid" src="<?php echo htmlspecialchars($image); ?>" alt="card image"></p>
+                                <h4 class="card-title"><?php echo $row['Name'] ?> </h4>
+                                <p class="card-text" style="font-size: 18px;"><?php echo $row['Service']; ?></p>
+                                <p class="card-text" style="font-size: 15px;"><?php echo$row['Experience']. " of Experience"; ?></p>
+                                <p class="card-text" style="font-size: 12px;"><i class="fa fa-map-marker"></i><?php echo $row['Address'] ?></p>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x "></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <p class="card-text btn-text">
+                                  <p style="color:black"> Log In in order to Book an Appointment</p>
+                                  <button style=" color: #fff;
+                                                  width: 30%;
+                                                  background: #bfbfbf;
+                                                  font-size: 20px;
+                                                  padding:auto;
+                                                  border: none;
+                                                  margin-right:3%;
+                                                  border-radius: 25px;
+                                                  cursor: pointer;
+                                                  float:left;
+                                                  margin-top:8%;"><?php echo date("H:i", strtotime($row['TimeSlot1'])); ?></button>
+                                  <button style=" color: #fff;
+                                                  width: 30%;
+                                                  background: #bfbfbf;
+                                                  font-size: 20px;
+                                                  padding:auto;
+                                                  border: none;
+                                                  margin-right:3%;
+                                                  border-radius: 25px;
+                                                  cursor: pointer;
+                                                  float:left;
+                                                  margin-top:8%;"><?php echo date("H:i", strtotime($row['TimeSlot2'])); ?></button>
+                                  <button style=" color: #fff;
+                                                  width: 30%;
+                                                  background: #bfbfbf;
+                                                  font-size: 20px;
+                                                  padding:auto;
+                                                  border: none;
+                                                  margin-right:3%;
+                                                  border-radius: 25px;
+                                                  cursor: pointer;
+                                                  float:left;
+                                                  margin-top:8%;"><?php echo date("H:i", strtotime($row['TimeSlot3'])); ?></button>
+                                  <button style=" color: #fff;
+                                                  width: 30%;
+                                                  background: #bfbfbf;
+                                                  font-size: 20px;
+                                                  padding:auto;
+                                                  margin-right:3%;
+                                                  border: none;
+                                                  border-radius: 25px;
+                                                  cursor: pointer;
+                                                  float:left;
+                                                  margin-top:8%;"><?php echo date("H:i", strtotime($row['TimeSlot4'])); ?></button>
+                                  <button style=" color: #fff;
+                                                  width: 30%;
+                                                  background: #bfbfbf;
+                                                  font-size: 20px;
+                                                  padding:auto;
+                                                  margin-right:3%;
+                                                  border: none;
+                                                  border-radius: 25px;
+                                                  cursor: pointer;
+                                                  float:left;
+                                                  margin-top:8%;"><?php echo date("H:i", strtotime($row['TimeSlot5'])); ?></button>
+                                  <button style=" color: #fff;
+                                                  width: 30%;
+                                                  background: #bfbfbf;
+                                                  font-size: 20px;
+                                                  padding:auto;
+                                                  margin-right:3%;
+                                                  border: none;
+                                                  border-radius: 25px;
+                                                  cursor: pointer;
+                                                  float:left;
+                                                  margin-top:8%;"><?php echo date("H:i", strtotime($row['TimeSlot6'])); ?></button>
+                                  <button style=" color: #fff;
+                                                  width: 30%;
+                                                  background: #bfbfbf;
+                                                  font-size: 20px;
+                                                  padding:auto;
+                                                  margin-right:3%;
+                                                  border: none;
+                                                  border-radius: 25px;
+                                                  cursor: pointer;
+                                                  float:left;
+                                                  margin-top:8%;"><?php echo date("H:i", strtotime($row['TimeSlot7'])); ?></button>
+                                  <button style=" color: #fff;
+                                                  width: 30%;
+                                                  background: #bfbfbf;
+                                                  font-size: 20px;
+                                                  padding:auto;
+                                                  border: none;
+                                                  margin-right:3%;
+                                                  border-radius: 25px;
+                                                  cursor: pointer;
+                                                  float:left;
+                                                  margin-top:8%;"><?php echo date("H:i", strtotime($row['TimeSlot8'])); ?></button>
+                                  <button style=" color: #fff;
+                                                  width: 30%;
+                                                  background: #bfbfbf;
+                                                  font-size: 20px;
+                                                  padding:auto;
+                                                  margin-right:3%;
+                                                  border: none;
+                                                  border-radius: 25px;
+                                                  cursor: pointer;
+                                                  float:left;
+                                                  margin-top:8%;"><?php echo date("H:i", strtotime($row['TimeSlot9'])); ?></button>
+                                </p>
+                                <button style=" color: #fff;
+                                                width: 80%;
+                                                background: #3498db;
+                                                font-size: 20px;
+                                                padding:auto;
+                                                border: none;
+                                                margin:auto;
+                                                border-radius: 25px;
+                                                cursor: pointer;
+                                                float:center;
+                                                margin-top:8%;" data-id="<?php echo htmlspecialchars($row["Id"],ENT_QUOTES); ?>" class="detailButton"> Book an Appointment </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php
+        }
+       }else{
+        header("location:service.php?dbError=Some error in connecting to database.");
+    }
+    ?>
+        <!-- end Doctor -->
+
+<script>
+
+var btn = document.getElementsByClassName("detailButton");
+
+for(var i=0;i<btn.length;i++){
+    btn[i].addEventListener("click",function(){
+      console.log(this);
+var id= (this).dataset.id;
+window.location='./Login.php?id='+id;
+
+    });
+}
+
+
+var service = document.getElementsByClassName("service-btn");
+
+for(var i=0;i<service.length;i++){
+  service[i].addEventListener("click",function(){
+    console.log(this.nextElementSibling.innerText);
+    window.location.href='Service.php?select='+(this).nextElementSibling.innerText;
+
+  });
+}
+
+</script>
+<!-- start footer section -->
+<footer class="footer-section fixed bottom" >
+        <div class="container fixed-bottom" id="footer">
+            <div class="footer-cta pt-3 pb-3">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fa fa-map-marker"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>1010 Avenue, New Delhi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fa fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>987-654-3210</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fa fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>abc@appoi.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+</footer>
+<!-- end footer section -->
+
+<script src="js/script.js"></script>
+</body>
+</html>
