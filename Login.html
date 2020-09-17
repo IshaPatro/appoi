@@ -1,0 +1,223 @@
+<html>
+<head>
+  <title>Appointment Scheduler</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-social.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Emblema+One&display=swap.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/Login.css">
+</head>
+
+<body>
+  <!-- start header -->
+  <header>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                  <i class="fa fa-phone"></i><span> Phone</span>987-654-3210
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                  <p><i class="fa fa-envelope-o"></i><span> Email</span><a href="#">abc@appoi.com</a></p>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="social-icon">
+                    <span>Meet us on</span>
+                    <a href="http://google.com/+"><i class="fa fa-google-plus"></i></a><span></span>
+                    <a href="http://www.facebook.com/profile.html?id="><i class="fa fa-facebook"></i></a><span></span>
+                    <a href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a><span></span>
+                    <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a><span></span>
+                    <a href="http://instagram.com/"><i class="fa fa-instagram"></i></a><span></span>
+                </div>
+             </div>
+          </div>
+      </div>
+  </header>
+  <!-- end header -->
+
+<!-- start navigation -->
+<nav class="navbar navbar-light navbar-expand-md navbar-default" role="navigation" id="NavBar">
+    <div class="container">
+       <a class="navbar-brand" href="./index.html" id="navbar-brand"><img src="Images/logo.png" height="50" width="65">APPOI</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="Home.html"> HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="About.html"> ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link" href="Service.html"> SERVICE</a></li>
+                <li class="nav-item"><a class="nav-link" href="Contact.html"> CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- end navigation -->
+
+<div class="container" id="login-form">
+
+    <div class="w40">
+      <div class="CustomerBox active"style="margin-left:15%;">
+        <div class="text">
+          <h3>Customer</h3>
+          <p>If you are a service provider, Click here</p>
+        </div>
+        <div class="bounce">
+          <i class="fa fa-angle-double-down" class="arrow"></i>
+        </div>
+        <button class="btn CustomerBox-btn cust-btn"  >Service Provider</button>
+      </div>
+      <div class="ClientBox">
+        <div class="text">
+          <h3 style="margin-top:40px;">Service Providers</h3>
+          <p>If you are a customer, Click here</p>
+        </div>
+        <div class="bounce">
+          <i class="fa fa-angle-double-down" class="arrow"></i>
+        </div>
+        <button class="btn ClientBox-btn cust-btn">Customer</button>
+      </div>
+    </div>
+
+    <div class="w60">
+      <h2 class="customer-login">Log-in as Customer</h2>
+      <h2 class="client-login">Log-in as Service Provider</h2>
+
+
+
+    <div class="form-box">
+      <div class="button-box">
+        <div id="login-signup"></div>
+              <button type="button" class="toggle-btn" >Login</button>
+              <button type="button" class="toggle-btn" >Register</button>
+      </div>
+      <form id="login" class="input-group" data-set="customer" method="POST">
+        <input type="text" class="input-field" placeholder="Username" name="Uname" >
+        <input type="password" class="input-field" placeholder="Password" name="pass" >
+        <button type="submit" class="submit-btn" name="sub">Login</button>
+      </form>
+      <form id="register" data-set="customer" class="input-group" method="POST" style="position: absolute;">
+        <input type="text" class="input-field" placeholder="Username" name="Uname">
+        <input type="email" class="input-field" placeholder="Email" name="email" >
+        <input type="password" class="input-field" placeholder="Password" name="pass1">
+        <input type="password" class="input-field" placeholder="Confirm Password"  name="pass2">
+        <button type="submit" class="submit-btn" name="sub">Register</button>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- end form -->
+
+
+<footer class="footer-section fixed bottom" >
+        <div class="container fixed-bottom" id="footer">
+            <div class="footer-cta pt-3 pb-3">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fa fa-map-marker"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>1010 Avenue, New Delhi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fa fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>987-654-3210</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fa fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>abc@appoi.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+         </div>
+</footer>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+  $(".client-login").hide();
+  $(function() {
+    $(".CustomerBox-btn").click(function() {
+     $(".w40").addClass("active");
+     $(".CustomerBox-btn").addClass("active");
+     $(".ClientBox-btn").removeClass("active");
+     $(".CustomerBox").removeClass("active");
+     $(".ClientBox").addClass("active");
+     $(".w40").removeClass("shift-left");
+     $(".w60").removeClass("shift-right");
+     $(".w60").addClass("active");
+     $(".new-account-section").addClass("active");
+     $(".sign-in-section").addClass("active");
+     $(".customer-login").hide();
+     $(".client-login").show();
+    });
+  });
+  $(function() {
+    $(".ClientBox-btn").click(function() {
+     $(".CustomerBox-btn").removeClass("active");
+     $(".ClientBox-btn").addClass("active");
+     $(".w40").removeClass("active");
+     $(".w40").addClass("shift-left");
+     $(".CustomerBox").addClass("active");
+     $(".ClientBox").removeClass("active");
+     $(".w60").removeClass("active");
+     $(".w60").addClass("shift-right");
+     $(".new-account-section").removeClass("active");
+     $(".sign-in-section").removeClass("active");
+     $(".client-login").hide();
+     $(".customer-login").show();
+    });
+  });
+
+  $(document).ready(function(){
+      var $signin = $('#signin-btn');
+      var $signup = $('#signup-btn');
+      var $frmSignup = $('#frm-signup');
+      var $frmSignin = $('#frm-signin');
+
+      $signin.click(function(){
+        $frmSignup.hide();
+        $frmSignin.fadeIn();
+        $signup.removeClass('active');
+        $(this).addClass('active');
+      });
+      $signup.click(function(){
+        $frmSignin.hide();
+        $frmSignup.fadeIn();
+        $signin.removeClass('active');
+        $(this).addClass('active');
+      });
+    });
+
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("login-signup");
+
+    function register() {
+      x.style.left = "-400px";
+      y.style.left = "50px";
+      z.style.left = "110px";
+    }
+    function login() {
+      x.style.left = "50px";
+      y.style.left = "450px";
+      z.style.l
+    }
+</script>
+
+</body>
+</html>
